@@ -1,5 +1,9 @@
 {{ partial "header.html" . }}
 
+<header>
+{{ partial "navbar.html" . }}
+</header>
+
 {{ if .Draft }}
 DRAFT
 {{ end }}
@@ -11,7 +15,7 @@ DRAFT
 
 
 <footer>
-{{ if (eq .Type "post") }}
+{{ if (eq .Type "posts") }}
 	<p><small><em>Written {{ .Date.Format "January 2, 2006"}}. </em>
 		{{ if $.Site.Params.twitter  }} 
 		Send feedback to <a  href="https://twitter.com/intent/tweet?text=%40{{ $.Site.Params.twitter }}%20%23{{ replace (.URL) "/" "" }}%20">@{{ $.Site.Params.twitter }}</a>.

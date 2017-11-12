@@ -1,10 +1,6 @@
 
 <header>
-<a href="/">/posts</a>
-{{ range $.Site.Params.navigation }}{{ with $.Site.GetPage "page" . }}
-&nbsp;·&nbsp;&nbsp;<a href="{{ lower .Permalink }}" style="color:black;">/{{ .Title }}</a>
-{{ end }}{{ end }}
-
+{{ partial "navbar.html" . }}
 {{ if .Draft }}
 DRAFT
 {{ end }}
@@ -12,7 +8,7 @@ DRAFT
 
 <div class="content">
     {{ range first 100000 .Pages }}
-    {{ if eq .Type "post"}}
+    {{ if eq .Type "posts"}}
         <p>
         <aside>{{ .Date.Format "January 2, 2006"}} 
             {{ if .Params.tags }}
