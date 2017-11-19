@@ -1,39 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
-body, li  p {
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+body, li ,p {
   background-color: #fdf6e3;
   color: #002b36;
   font-family: 'Merriweather', serif;
   font-weight: 500;
 }
 
+p.listelement {
+  margin-top: 0.5em;
+}
+
 h1,h2,h3,h4,h5,h6,header,header.a {
   text-transform: lowercase;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 0.5em;
 }
 
 header,header.a{
   font-weight: bold;
-  color: #6c71c4;
-}
-
-h1 {
-  color: #6c71c4;
-}
-h2 {
-  color: #268bd2;
-}
-h3 {
-  color: #d33682;
-}
-h4 {
-  color: #b58900;
-}
-h5 {
-  color: #2aa198;
-}
-h6 {
-  color: #6c71c4;
 }
 
 @media all {
@@ -152,31 +137,29 @@ aside em {
 
 
 p {
-  margin-bottom: 1em;
-  line-height: 1.45;
+  text-align: justify;
+}
+
+p + p {
+  text-indent: 1.5em;
 }
 
 ul,ol {
-  margin-bottom: 1em;
   padding-left: 1em;
 }
 
 li {
-  line-height: 1.75;
+  margin-bottom: 0.25em;
 }
 
 
 table { 
-  margin-bottom: 1.5em;
+  display: block;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
   border-collapse: collapse;
-  width: 95%;
-}
-
-table tr + tr {
-  border-top: 1px solid #ccc;
-}
-table td + td {
-  border-left: 1px solid #ccc;
+  max-width: 95%;
+  overflow-x: scroll;
 }
 
 table td {
@@ -187,9 +170,11 @@ table td {
   -o-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  border: 1px solid #ccc;
 }
 
 table th {
+  border: 2px solid #ccc;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 95%;
@@ -282,7 +267,6 @@ figcaption {
 }
 blockquote {
   font-style: italic;
-  font-size: 1.1em;
   margin: 0.7em 10px;
   padding: 1.2em 20px;
   margin-bottom: 0px;

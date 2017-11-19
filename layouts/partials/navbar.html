@@ -1,4 +1,4 @@
-<a href="/">/posts</a>
+<a href="/">/posts.</a>
 {{ range $.Site.Params.navigation }}{{ with $.Site.GetPage "page" . }}
 &nbsp;·&nbsp;&nbsp;<a href="{{ lower .Permalink }}">/{{ .Title }}</a>
 {{ end }}{{ end }}
