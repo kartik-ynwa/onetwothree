@@ -9,7 +9,7 @@ DRAFT
 <div class="content">
     {{ range first 100000 .Pages }}
     {{ if eq .Type "posts"}}
-        <p class="listelement">
+        <p class="listElement">
         <aside>{{ .Date.Format "January 2, 2006"}} 
             {{ if .Params.tags }}
             /// <em>{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a href="/tags/{{$e}}/">{{ $e }}</a>{{ end }}
@@ -17,7 +17,7 @@ DRAFT
 
             {{ end }}
         </aside>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <a href="{{ .Permalink }}" class="postTitle">{{ .Title }}</a>
         </p>
     {{ end }}
     {{ end }}
