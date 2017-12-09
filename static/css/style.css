@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Volkorn');
 body, li ,p {
-  background-color: #fdf6e3;
-  color: #002b36;
+  background-color: #f9f5d7;
+  color: #282828;
   font-family: 'Merriweather', serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 p.listelement {
@@ -12,13 +12,10 @@ p.listelement {
 }
 
 h1,h2,h3,h4,h5,h6,header,header.a {
-  text-transform: lowercase;
-  font-family: 'PT Sans', sans-serif;
-  margin-top: 0.5em;
-}
-
-header,header.a{
-  font-weight: bold;
+  font-weight: 500;
+  font-family: 'Volkorn', seritf;
+  margin-top: 0.75em;
+  margin-bottom: 0.15em;
 }
 
 @media all {
@@ -115,8 +112,8 @@ h1 {
   display: block;
   font-size: 170%;
   line-height: 1.1;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
   padding-top: 0.02em;
   -moz-hyphens: none;
   -webkit-hyphens: none;
@@ -145,6 +142,7 @@ p + p {
 }
 
 ul,ol {
+  margin-top: 0.25em;
   padding-left: 1em;
 }
 
@@ -159,7 +157,7 @@ table {
   margin-top: 0.5em;
   border-collapse: collapse;
   max-width: 95%;
-  overflow-x: scroll;
+  overflow: auto;
 }
 
 table td {
