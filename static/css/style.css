@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
-@import url('https://fonts.googleapis.com/css?family=Volkorn');
 body, li ,p {
   background-color: #f9f5d7;
   color: #282828;
-  font-family: 'Merriweather', serif;
-  font-weight: 400;
+  font-family: serif;
+  line-height: 1.3;
 }
 
 p.listElement {
@@ -12,10 +10,8 @@ p.listElement {
 }
 
 h1,h2,h3,h4,h5,h6,header,header.a {
-  font-weight: 500;
-  font-family: 'Volkorn', seritf;
-  margin-top: 0.75em;
-  margin-bottom: 0.15em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 @media all {
@@ -112,8 +108,6 @@ h1 {
   display: block;
   font-size: 170%;
   line-height: 1.1;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
   padding-top: 0.02em;
   -moz-hyphens: none;
   -webkit-hyphens: none;
@@ -138,7 +132,7 @@ p {
 }
 
 p + p {
-    text-indent: 1.5em;
+    text-indent: 2em;
 }
 
 ul,ol {
@@ -198,8 +192,6 @@ a {
 a.postTitle {
     font-size: 1.25em;
     line-height: 1.1;
-    text-transform: lowercase;
-    font-family: 'PT Sans', sans-serif;
 }
 
 div.nav a:active div { 
